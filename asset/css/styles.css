@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 1.6rem;
+}
+/* ---common--- */
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+}
+/* header fix */
+
+.header.fix-header {
+    position: sticky;
+    top: -28px;
+    /* background-color: orange; */
+}
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 8px;
+}
+.navbar {
+    margin-left: auto;
+}
+
+.header .navbar .list {
+    display: flex;
+}
+.navbar a {
+    color: #2f3a3b;
+    padding: 8px 19.5px;
+}
+
+.navbar a:hover,
+.navbar li.active a {
+    color: #2f3a3b;
+    text-shadow: 1px 0 0 currentColor;
+}
+.header .action {
+    display: flex;
+    align-items: center;
+    margin-left: 133.5px; /* 177px - 19.5px (padding right of Contact) - 24px (padding left of Sign in) */
+}
+.header .action .sign-in {
+    color: #494949;
+    padding: 8px 24px;
+}
+.header .action .sign-up {
+    width: 108px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    color: #1ebfc1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action .sign-up:hover {
+    cursor: pointer;
+    background: #1ebfc1;
+    color: #fff;
+    border-color: #1ebfc1;
+}
